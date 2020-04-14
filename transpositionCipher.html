@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cifra de Transposição</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>FB uni</h1>
+		<h2>Disciplina de Segurança da Informação</h2>
+		<h2>Prof Helano</h2>
+		<h2 class="mb-4">Aluno: DANIEL LOPES DA SILVA - 1710496</h2>	
+		<h3 class="text-center">Cifra de Transposição</h3>
+		<form onsubmit="return false;">
+			<div class="form-group">
+			    <label for="chave">Chave</label>
+			   	<input type="text" class="form-control" id="chave" required></textarea>
+			 </div>	
+			<div class="row">
+			    <div class="col-md">
+					<div class="form-group">
+				    	<label for="TextoParaCriptografar">Texto para Criptografar</label>
+				    	<textarea class="form-control mb-3" id="TextoParaCriptografar" rows="8"></textarea>
+				    	<button class="btn btn-outline-dark" onclick="criptografarTransposicao()">Criptografar</button>
+				 	</div>
+			    </div>
+			    <div class="col-md">
+					<div class="form-group">
+				    	<label for="TextoParaDescriptografar">Texto para Descriptografar</label>
+				    	<textarea class="form-control mb-3" id="TextoParaDescriptografar" rows="8"></textarea>
+				    	<button class="btn btn-outline-dark" onclick="descriptografarTransposicao()">Descriptografar</button>
+				  	</div>
+			    </div>
+			  </div>
+			</div>
+		</form>
+	</div>
+	<script src="transpositionCipher.js"></script>
+</body>
+</html>
